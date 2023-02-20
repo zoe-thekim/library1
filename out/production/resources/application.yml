@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/shop?useSSL=false&autoReconnect=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Seoul
+      username: root
+      password: Tres_247
+      driver-class-name: com.mysql.jdbc.Driver
+
+# column name to camel case -> DB에서는 스네이크 케이스(USER_NAME) java에서는 카멜 케이스(userCase) = 일치를 위한 설정
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
